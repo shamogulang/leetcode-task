@@ -11,6 +11,18 @@ package cn.oddworld;
  */
 public class Leetcode322 {
 
+
+    public static void main(String[] args) throws Exception {
+        Leetcode322 leetcode322 = new Leetcode322();
+        int[] coins = {3,6,8};
+        int amount = 90;
+        while (true){
+            int i = 10;
+            leetcode322.coinChange(coins, amount);
+            i++;
+        }
+    }
+
     /**
      * 1、定义dp数组的含义：dp[i]表示使用coins来i数额的钱，最少使用dp[i]枚coin
      * 2、状态转移方程：dp[i]=min(dp[i-j1],dp[i-j2]...dp[i-jn])+1
